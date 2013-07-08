@@ -1,0 +1,66 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Controle Painel VBN</title>
+	<link rel="stylesheet/less" href="css/style.less" type="text/css" />
+	<script src="js/less.js"></script>
+
+	<!-- Fontes personalizadas -->
+	<link href='http://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Orbitron:500' rel='stylesheet' type='text/css'>
+
+	<!-- Botões para compartilhar 
+	<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+	<script type="text/javascript">stLight.options({publisher: "e01d3466-c064-4d3c-a0a7-88bec6dc8ed0"}); </script>
+		-->
+</head>
+<body>
+
+	<div id="geral">
+
+		<div class="borda-calculadora">
+
+			<div id="calculadora">
+
+				<div class="topo-calculadora">
+
+					<div class="titulo">
+						<h1>Controle VBN</h1>
+					</div><!-- titulo -->
+				</div>
+
+				<div class="clear"></div>
+
+				<form name="Calc">
+
+				<input type="text" id="txtCalculadora" value="" name="txtCalculadora" maxlength="6" />
+
+				<div class="clear"></div>
+
+				<ul id="botoes-opcoes">
+					<li onClick="Calc.txtCalculadora.value += '1'">1</li>
+					<li onClick="Calc.txtCalculadora.value += '2'">2</li>
+					<li onClick="Calc.txtCalculadora.value += '3'">3</li>
+					<li onClick="Calc.txtCalculadora.value += '4'">4</li>
+					<li onClick="Calc.txtCalculadora.value += '5'">5</li>
+					<li onClick="Calc.txtCalculadora.value += '6'">6</li>
+					<li onClick="Calc.txtCalculadora.value += '7'">7</li>
+					<li onClick="Calc.txtCalculadora.value += '8'">8</li>
+					<li onClick="Calc.txtCalculadora.value += '9'">9</li>
+					<li onClick="Calc.txtCalculadora.value += ' + '">+</li>
+					<li onClick="Calc.txtCalculadora.value += '0'">0</li>
+					<li onClick="Calc.txtCalculadora.value += '.'">.</li>
+					<li class="off" onClick="Calc.txtCalculadora.value = ''">Enviar</li>
+				</ul>
+
+				</form>
+
+			</div><!-- calculadora -->
+
+		</div><!-- borda-calculadora -->
+
+	</div><!-- geral -->
+
+</body>
+</html>

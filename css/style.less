@@ -18,8 +18,9 @@ body {
 // Estilo da div#geral quando a calculadora estiver "desligada"
 
 #geral { // Tela de apresentação
+	//width: device-width;
 	width: device-width;
-	margin: 1% auto;
+	//margin: 1% auto;
 	overflow: hidden;
 
 	.borda-calculadora { // Borda da calculadora
@@ -47,7 +48,9 @@ body {
 
 
 		#calculadora { // Estrutura da calculadora
-			width: auto;
+			//width: device-width;
+			//height: device-height;
+			//width: auto;
 			background: #ccc;
 			overflow: hidden;
 			border-radius: 35px;
@@ -68,7 +71,8 @@ body {
 				overflow: hidden;
 
 				.titulo { // Alinhar título e descricão da calculadora
-					float: left;
+					text-align: center;
+					//float: left;
 					padding: 10px 15px;
 
 					h1 { // Nome da calculadora
@@ -98,14 +102,14 @@ body {
 					color-stop(0.5, #829081),
 					color-stop(0.5, #718570)
 				);
-				padding: 2px 10px 0;
-				width: 85%; // Tamanho do campo em porcentagem
+				//padding: 0px 15px 0;
+				width: 100%; // Tamanho do campo em porcentagem
 				height: 70px;
 				border: 0;
 				margin-bottom: 20px;
 
 				// Fontes do campo no estilo digital
-				font: 98px 'Digital', sans-serif;
+				font: 75px 'Digital', sans-serif;
 				color: rgba(255, 255, 255, .75); // Cor com opacidade
 				text-align: right;
 				-webkit-font-smoothing: none;
@@ -114,14 +118,13 @@ body {
 			}
 
 			#botoes-opcoes { // Botoes de opções de cálculo
-				overflow: hidden;
-
+				//overflow: hidden;
 				li {
 					display: block;
 					float: left;
 					cursor: pointer;
-					//width: 46px;
-					width: 13%;
+					width: 65px;
+					//width: 16%;
 					background: #757575;
 					text-align: center;
 
@@ -133,27 +136,16 @@ body {
 					background: -ms-radial-gradient(center, ellipse cover,  #757575 0%,#494949 47%,#383838 100%);
 					background: radial-gradient(ellipse at center,  #757575 0%,#494949 47%,#383838 100%);
 					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#757575', endColorstr='#383838',GradientType=1 );
-					margin: 0 15px 15px 0;
+					//margin: 0 15px 15px 0;
+					margin: 5px;
 					border-radius: 10px;
 					font: 25px/20px 'Audiowide';
 					color: #FFF;
 					padding: 19px;
-
-						&:hover {
-							background: #939393;
-							background: -moz-radial-gradient(center, ellipse cover,  #939393 0%, #606060 47%, #191919 100%);
-							background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#939393), color-stop(47%,#606060), color-stop(100%,#191919));
-							background: -webkit-radial-gradient(center, ellipse cover,  #939393 0%,#606060 47%,#191919 100%);
-							background: -o-radial-gradient(center, ellipse cover,  #939393 0%,#606060 47%,#191919 100%);
-							background: -ms-radial-gradient(center, ellipse cover,  #939393 0%,#606060 47%,#191919 100%);
-							background: radial-gradient(ellipse at center,  #939393 0%,#606060 47%,#191919 100%);
-							filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#939393', endColorstr='#191919',GradientType=1 );
-
-					}
 				}
-				li:nth-child(3n+3) { margin-right: 1 }
+				//li:nth-child(3n+3) { margin-right: 0 }
 				li.off { // Estilo personalizado para o botão OFF
-					width: 80%;
+					width: 290px;
 					background: #cc0000;
 					background: -moz-radial-gradient(center, ellipse cover,  #cc0000 0%, #c92e2e 48%, #890000 100%);
 					background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#cc0000), color-stop(48%,#c92e2e), color-stop(100%,#890000));
@@ -163,17 +155,6 @@ body {
 					background: radial-gradient(ellipse at center,  #cc0000 0%,#c92e2e 48%,#890000 100%);
 					filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc0000', endColorstr='#890000',GradientType=1 );
 					font-size: 25px;
-
-					&:hover {
-						background: #cc4b4b;
-						background: -moz-radial-gradient(center, ellipse cover,  #cc4b4b 0%, #c64343 48%, #890000 100%);
-						background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#cc4b4b), color-stop(48%,#c64343), color-stop(100%,#890000));
-						background: -webkit-radial-gradient(center, ellipse cover,  #cc4b4b 0%,#c64343 48%,#890000 100%);
-						background: -o-radial-gradient(center, ellipse cover,  #cc4b4b 0%,#c64343 48%,#890000 100%);
-						background: -ms-radial-gradient(center, ellipse cover,  #cc4b4b 0%,#c64343 48%,#890000 100%);
-						background: radial-gradient(ellipse at center,  #cc4b4b 0%,#c64343 48%,#890000 100%);
-						filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc4b4b', endColorstr='#890000',GradientType=1 );
-					}
 				}
 			}
 		}
